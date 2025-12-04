@@ -7,7 +7,6 @@ body {
     padding-top: 60px;
 }
 
-
 header{
     background-color:#BEA574;
     position: fixed;
@@ -57,25 +56,6 @@ a{
     object-fit: cover;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.swiper-button-prev {
-  left: 0;
-}
-
-.swiper-button-next {
-  right: 0;
-}
-
 .swiper-button-prev img,
 .swiper-button-next img {
   width: 100%;
@@ -83,3 +63,158 @@ a{
   object-fit: contain;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+  content: none;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;   
+  height: 16px;  
+  margin: 0 12px; 
+  background-color:#BEA574;
+}
+
+.summer{
+    text-align: center;
+    margin-top: 48px;
+}
+.black{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.red{
+    font-size: 60px;
+    color: red;
+}
+
+.schedule{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+.schedule_content{
+    margin-top: 24px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.2);
+}
+
+.day_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.day{
+    background-color: #ccc;
+    padding:12px 24px;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    border-bottom: 3px solid #be9874;
+}
+
+.schedule_description{
+    padding: 16px 24px;
+}
+.day, .day_description {
+    margin: 0;
+}
+
+.day.active {
+  background-color: #BEA574;
+  color: white;
+}
+
+.google{
+    text-align: center;
+    margin-top: 48px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.google_address{
+    margin-top: 12px;
+}
+
+.google_map{
+    margin-top: 8px;
+}
+
+.inquiry{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 300px;
+    margin: 64px auto;
+}
+
+.inquiry_content{
+    text-align: left;
+}
+
+.inquiry_content div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px    
+}
+
+.label_title{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inquiry_name{
+    margin-top: 24px;
+}
+
+.required{
+    font-size: 10px;
+    color: red;
+}
+
+.tel_span{
+    color:rgb(117, 115, 115);
+    font-size: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+select {
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    background-color: #BEA574;
+}
+
+button:disabled,
+input[type="submit"]:disabled {
+    background-color: #BEA574;
+    opacity: 0.5; 
+    cursor: not-allowed;
+}
+
+.site-footer{
+    background-color: #BEA574;
+    width: 100%;
+    bottom: 0;
+    padding: 12px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.ty{
+    font-weight: bold;
+}
