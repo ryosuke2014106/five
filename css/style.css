@@ -333,8 +333,7 @@ input[type="submit"]:disabled {
 }
 
 
-.confirm_wrapper{
-    position: fixed;      
+.confirm_wrapper{     
     top: 0;
     left: 0;
     width: 100%;
@@ -342,16 +341,69 @@ input[type="submit"]:disabled {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -130px;
 }
 
 .confirm_title{
     font-weight: bold;
+    text-align: center;
+    padding: 24px;
 }
 
 .confirm_content p{
     padding: 24px;
 }
 
+.confirm_content p {
+    display: flex;
+    align-items: center;
+}
+
+.confirm_content p span {
+    margin-left: 40px;   
+}
+
+.label {
+    width: 180px;    
+}
+
+.confirm_btn_area form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.confirm_btn_area button[type="submit"] {
+    background-color:#BEA574;  
+    color: #fff;
+    font-size: 16px;           
+    padding: 2px 8px;      
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.confirm_btn_area button[type="button"] {
+    background-color:#dad2d2;  
+    color: #fff;
+    font-size: 16px;           
+    padding: 2px 8px;      
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.confirm_btn_area button {
+    margin: 4px;
+}
+
+.thanks{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px;
+}
 
 
 
@@ -362,5 +414,5 @@ input[type="submit"]:disabled {
 
     .hamburger_menu {
     display: block;
-  }
+    }
 }

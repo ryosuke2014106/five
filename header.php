@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第５回課題</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+
     <header>
         <div class="header_content">
-            <a href="" class="header_img"><img src="./img/logo.png" alt=""> </a>
+            <a href="index.php" class="header_img"><img src="./img/logo.png" alt=""> </a>
             <ul class="none">
-                <li><a href="#schedule">スケジュール</a></li>
-                <li><a href="#google">アクセス</a></li>
-                <li><a href="#inquiry">席予約</a></li>
+                <li><a href="index.php#schedule">スケジュール</a></li>
+                <li><a href="index.php#google">アクセス</a></li>
+                <li><a href="index.php#inquiry">席予約</a></li>
             </ul>
             <div class="hamburger_menu" id="js_hamburger_menu">
               <span class="hamburger_menu_bar"></span>
@@ -30,3 +21,4 @@
                 </nav>
         </div>
     </header>
+

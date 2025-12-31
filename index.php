@@ -8,28 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header_content">
-            <a href="" class="header_img"><img src="./img/logo.png" alt=""> </a>
-            <ul class="none">
-                <li><a href="#schedule">スケジュール</a></li>
-                <li><a href="#google">アクセス</a></li>
-                <li><a href="#inquiry">席予約</a></li>
-            </ul>
-            <div class="hamburger_menu" id="js_hamburger_menu">
-              <span class="hamburger_menu_bar"></span>
-              <span class="hamburger_menu_bar"></span>
-              <span class="hamburger_menu_bar"></span>
-            </div>    
-                <nav class="nav-menu">
-                  <ul>
-                      <li><a href="#schedule">スケジュール</a></li>
-                      <li><a href="#google">アクセス</a></li>
-                      <li><a href="#inquiry">席予約</a></li>
-                  </ul> 
-                </nav>
-        </div>
-    </header>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./img/slide_2.jpg" alt=""> </div>
@@ -85,7 +63,7 @@
         <div class="inquiry" id="inquiry">
         <p>席予約</p>
         <div class="inquiry_content">
-            <form method="get" action="./confirm.html">
+            <form method="get" action="./confirm.php">
                 <div class="inquiry_name">
                     <label for="name" class="label_title">お名前 <span class="required">(必須)</span></label>
                     <input type="text" id="name" name="name" placeholder= "例）田中 太郎" required="">
@@ -117,6 +95,7 @@
     </div>
     <p class="ty">あいうえお</p>
 <?php include("footer.php"); ?>
+<?php include("header.php"); ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
