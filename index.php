@@ -93,7 +93,7 @@
             </form>
         </div>
     </div>
-    <p class="ty">あいうえお</p>
+
 <?php include("footer.php"); ?>
 <?php include("header.php"); ?>
 

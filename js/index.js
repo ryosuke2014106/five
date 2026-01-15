@@ -82,3 +82,49 @@ $(function () {
   });
 });
 
+
+$(function () {
+  $('a[href^="#"]').click(function (e) {
+    e.preventDefault();
+
+    const speed = 600;
+    const headerHeight = 60; 
+    const href = $(this).attr('href');
+    const target = $(href === '#' || href === '' ? 'html' : href);
+
+    if (target.length) {
+      const position = target.offset().top - headerHeight;
+      $('html, body').animate({ scrollTop: position }, speed, 'swing');
+    }
+  });
+});
+
+$(function () {
+  $('a[href*="#"]').click(function (e) {
+    const href = $(this).attr('href');
+    const currentPath = location.pathname.split('/').pop(); 
+
+    const parts = href.split('#');
+    const pathPart = parts[0];
+    const hashPart = parts[1] ? '#' + parts[1] : '';
+
+    if (hashPart) {
+      if (pathPart === '' || pathPart === currentPath) {
+        e.preventDefault();
+
+        const headerHeight = 60;
+        const target = $(hashPart);
+        if (target.length) {
+          const position = target.offset().top - headerHeight;
+          $('html, body').animate({ scrollTop: position }, 600, 'swing');
+          $('.nav-menu').removeClass('is-active');
+          $('#js_hamburger_menu').removeClass('is-open');
+        }
+      }
+    }
+  });
+});
+
+
+
+
