@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   requiredFields.forEach(field => {
     field.addEventListener("input", validateForm);
+    field.addEventListener("change", validateForm);
   });
 
   validateForm();

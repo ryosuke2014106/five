@@ -70,13 +70,13 @@
                 </div>
                 <div>
                     <label for="seat" class="label_title">席の場所 <span class="required">(必須)</span></label>
-                      <select name="seat" id="seat" class="label_title">
+                      <select name="seat" id="seat" class="label_title" required>
                         <option value="">---</option>
-                        <option value="">SS席</option>
-                        <option value="">S席</option>
-                        <option value="">A席</option>
-                        <option value="">B席</option>
-                        <option value="">C席</option>
+                        <option value="SS">SS席</option>
+                        <option value="S">S席</option>
+                        <option value="A">A席</option>
+                        <option value="B">B席</option>
+                        <option value="C">C席</option>
                       </select>  
                 </div>
                 <div class="email_form">

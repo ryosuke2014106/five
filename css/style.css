@@ -356,7 +356,8 @@ footer{
 }
 
 .confirm{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -368,11 +369,8 @@ footer{
 
 .confirm_content p{
     padding: 24px;
-}
-
-.confirm_content p {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .confirm_content p span {
@@ -380,7 +378,8 @@ footer{
 }
 
 .label {
-    width: 180px;    
+    width: 180px;
+    flex-shrink: 0;
 }
 
 .confirm_btn_area form {
@@ -430,5 +429,21 @@ footer{
 
     .hamburger_menu {
     display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .thanks {
+        font-size: 24px;
+        padding: 16px;
+    }
+    .label {
+        width: auto;
+    }
+    .value {
+        white-space: nowrap;          
+        overflow: hidden;             
+        text-overflow: ellipsis;      
+        min-width: 0;       
     }
 }
