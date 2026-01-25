@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<?php include("header.php"); ?>
 <body>
+    <?php include("header.php"); ?>
     <p class="confirm_title">お問い合わせ内容確認</p>
         <div class="confirm_wrapper">   
             <div class="confirm">
@@ -48,5 +48,6 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script src= "./js/confirm.js"></script>
+<script src= "./js/index.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <?php include("header.php"); ?>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./img/slide_2.jpg" alt=""> </div>
@@ -93,9 +94,8 @@
             </form>
         </div>
     </div>
-
 <?php include("footer.php"); ?>
-<?php include("header.php"); ?>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
