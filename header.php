@@ -14,9 +14,9 @@
             </div>    
                 <nav class="nav-menu">
                   <ul>
-                      <li><a href="#schedule">スケジュール</a></li>
-                      <li><a href="#google">アクセス</a></li>
-                      <li><a href="#inquiry">席予約</a></li>
+                      <li><a href="index.php#schedule">スケジュール</a></li>
+                      <li><a href="index.php#google">アクセス</a></li>
+                      <li><a href="index.php#inquiry">席予約</a></li>
                   </ul> 
                 </nav>
         </div>

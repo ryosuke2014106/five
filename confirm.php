@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第５回課題</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -48,6 +47,6 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script src= "./js/confirm.js"></script>
-<script src= "./js/index.js"></script>
+<script src= "./js/hamburger.js"></script>
 </body>
 </html>
